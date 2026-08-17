@@ -1,0 +1,123 @@
+NORTHWIND TECHNOLOGIES
+INFORMATION SECURITY POLICY
+Version 2.1 | Classification: Internal | Owner: Chief Information Security Officer
+
+1. INTRODUCTION
+
+1.1 Purpose and Scope
+This Information Security Policy sets out the overall objectives to protect the information
+resources of Northwind Technologies ("Northwind") and applies to all employees, contractors,
+and third parties who access Northwind information systems. The policy is organized according
+to the domain structure of the ISO/IEC 27001 standard. Its purpose is to establish the
+mandatory security requirements that safeguard the confidentiality, integrity, and availability
+of Northwind information assets. The scope of this policy covers all Northwind business units,
+corporate functions, and the information systems that support them.
+
+2. ORGANIZATION OF INFORMATION SECURITY
+
+Responsibility for information security is allocated to defined roles. The Chief Information
+Security Officer (CISO) owns this policy and is accountable for the information security program.
+Business unit heads are responsible for ensuring security requirements are implemented within
+their areas. Security responsibilities are integrated into project management, and all changes
+to production systems are subject to a formal change-management process with documented approval.
+
+3. HUMAN RESOURCE SECURITY
+
+3.1 Security Awareness and Training
+All personnel are provided with security awareness training as part of onboarding, before being
+granted access to information systems, and annually thereafter. The training equips staff with
+the knowledge and skills to recognize and handle common cybersecurity risks, including phishing,
+social engineering, and safe handling of sensitive data. Completion of annual training is tracked
+and is mandatory; access may be suspended for personnel who do not complete it. Privileged users
+receive additional role-specific training appropriate to their responsibilities. Cybersecurity
+expectations are also incorporated into personnel screening and the joiner-mover-leaver process,
+including timely revocation of access upon termination.
+
+4. ASSET MANAGEMENT
+
+Northwind information assets are identified and recorded in an asset inventory maintained by the
+IT function. Assets are assigned an owner and classified according to the Northwind data
+classification scheme (Public, Internal, Confidential, Restricted). Classification determines the
+handling requirements applied to each asset. Asset owners are responsible for ensuring their
+assets are appropriately classified and protected.
+
+5. ACCESS CONTROL
+
+5.1 Access Management
+Access to Northwind information resources is granted on the principles of least privilege and
+need-to-know. Users are provisioned only the access required to perform their role, and
+segregation of duties is enforced so that no single individual can perform conflicting sensitive
+functions without oversight. User access rights are reviewed at least quarterly by the relevant
+system and data owners, and any excessive or unused entitlements are removed. Access rights are
+revoked promptly when a user changes role or leaves the organization.
+
+5.2 Authentication
+All user accounts must authenticate with a unique user ID and a strong password of at least
+twelve (12) characters. Multi-factor authentication (MFA) is mandatory for all administrative and
+privileged accounts, for all remote access, and for access to systems handling Confidential or
+Restricted data. Shared or generic accounts are prohibited except where explicitly approved and
+individually accountable. Passwords are stored using industry-standard hashing and are never
+transmitted or stored in clear text.
+
+6. CRYPTOGRAPHY
+
+Cryptographic controls are applied to protect the confidentiality and integrity of information.
+Confidential and Restricted data at rest is encrypted using AES-256, and data in transit over
+untrusted networks is protected using TLS 1.2 or higher. Cryptographic keys are managed through
+their lifecycle by the IT function.
+
+7. OPERATIONS SECURITY
+
+7.1 Malware Protection and Software Control
+Endpoint protection software is deployed on all Northwind systems and kept current. To prevent
+the installation and execution of unauthorized software, Northwind enforces application control:
+standard users do not have administrative rights on their endpoints, only approved software from
+the managed software catalog may be installed, and application allowlisting is applied on servers
+handling Restricted data. Attempts to install or run unapproved software are blocked and logged.
+
+7.2 Backups
+Backups of critical data and systems are created on a defined schedule. Backup data is encrypted,
+access to backups is restricted, and copies are stored in a separate location from the source
+systems. The integrity and restorability of backups is verified through restore testing performed
+at least quarterly, and the results of restore tests are recorded.
+
+7.3 Logging and Monitoring
+Security-relevant events across Northwind computing hardware, software, and runtime environments
+are logged to a centralized logging platform. Endpoint detection and response (EDR) tooling and
+network monitoring are used to detect potentially adverse events, such as malware execution,
+anomalous access, and unauthorized configuration changes. Logs are retained for a minimum of
+ninety (90) days and reviewed for indicators of compromise.
+
+8. COMMUNICATIONS SECURITY
+
+Communication networks are protected through segmentation, firewalls, and controlled network
+boundaries. Information transferred with external parties uses approved, encrypted methods.
+
+9. INFORMATION SECURITY INCIDENT MANAGEMENT
+
+Suspected information security incidents must be reported promptly to the Security Operations team
+through the established reporting channel. Reported events are triaged, and confirmed incidents are
+managed through a defined incident-response process covering containment, eradication, and recovery.
+Incident information is communicated to relevant internal teams, and where legal or regulatory
+obligations apply, to external authorities. Lessons learned from significant incidents are captured
+to reduce the likelihood of recurrence.
+
+10. BUSINESS CONTINUITY
+
+Northwind maintains business continuity arrangements to sustain critical services during adverse
+situations. Continuity plans address the recovery of critical information systems, and the
+continuity of information security controls is preserved during disruption.
+
+11. RISK MANAGEMENT
+
+Northwind operates an information security risk management process. Risk assessments are conducted
+periodically to identify risks to Northwind information assets, and identified risks are recorded
+in a risk register and assigned owners for treatment. Risk treatment decisions are documented.
+
+12. COMPLIANCE
+
+Northwind information resources are managed in a manner that meets applicable legal, statutory,
+regulatory, and contractual obligations, as well as internal policies and procedures. Compliance
+with this policy is mandatory, and violations may result in disciplinary action.
+
+END OF POLICY
